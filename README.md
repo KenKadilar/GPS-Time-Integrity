@@ -1,5 +1,7 @@
 # GPS Time Integrity
 
+![tests](https://github.com/KenKadilar/GPS-Time-Integrity/actions/workflows/ci.yml/badge.svg)
+
 A Raspberry Pi 5 disciplined to GPS, cross-checked against internet time servers, with a service that decides
 whether the clock can be trusted and writes every verdict into a signed, hash chained log.
 
@@ -126,6 +128,23 @@ sudo systemctl enable --now gps-verdict
 - The text sentences arrive about 119 ms after the second they describe, measured at 9600 baud. chrony needs
   that as `offset`, and `noselect` keeps a late source from steering the clock.
 - gpsd shared memory units 0 and 1 are root only, 2 and up are for a gpsd running as an ordinary user.
+
+## Tests
+
+```
+pytest tests -v
+```
+
+Ten tests, run by GitHub Actions on every push, none of them needing the hardware.
+
+The decision tests feed the logic source tables taken from real runs, including the 120 second spoof and the
+12.6 ms of healthy network noise, so the threshold is tested against both sides of the line. One test covers
+the defect that the spoof found: chrony leaves its star on the last reference it used, so a stale pulse reads
+`LOCKED` unless the check also asks when the last sample arrived.
+
+The log tests build a small signed log with a throwaway key, then attack it: an edited entry, a forgery that
+rebuilds every fingerprint correctly, and a log signed by a different device. The first breaks the chain, the
+other two break the signature.
 
 ## Checking a log
 

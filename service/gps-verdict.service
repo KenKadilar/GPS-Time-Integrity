@@ -1,0 +1,14 @@
+[Unit]
+Description=GPS time verdict service, writes a hash chained log
+After=chrony.service gpsd.service
+Wants=chrony.service gpsd.service
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/gps_timing/verdict_service.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

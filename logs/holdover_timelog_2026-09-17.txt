@@ -1,0 +1,118 @@
+21:59:57 ref=50505300 (PPS) sys=0.000000134 seconds fast of NTP time freq=7.626 ppm fast resid=+0.002 ppm fix=1 sats=07 | #* PPS 0 2 377 4 +107ns[ +211ns] +/- 311ns
+22:00:04 ref=50505300 (PPS) sys=0.000000117 seconds fast of NTP time freq=7.638 ppm fast resid=+0.001 ppm fix=1 sats=07 | #* PPS 0 2 377 3 +139ns[ +210ns] +/- 308ns
+22:00:11 ref=50505300 (PPS) sys=0.000000091 seconds fast of NTP time freq=7.642 ppm fast resid=+0.001 ppm fix=1 sats=07 | #* PPS 0 2 377 5 +380ns[ +554ns] +/- 307ns
+22:00:18 ref=50505300 (PPS) sys=0.000000132 seconds fast of NTP time freq=7.651 ppm fast resid=+0.001 ppm fix=1 sats=07 | #* PPS 0 2 377 4 +623ns[ +864ns] +/- 305ns
+22:00:25 ref=50505300 (PPS) sys=0.000000010 seconds fast of NTP time freq=7.652 ppm fast resid=+0.000 ppm fix=1 sats=08 | #* PPS 0 2 377 4 -14ns[ -19ns] +/- 310ns
+22:00:32 ref=50505300 (PPS) sys=0.000000485 seconds fast of NTP time freq=7.673 ppm fast resid=+0.005 ppm fix=1 sats=08 | #* PPS 0 2 377 3 +410ns[ +992ns] +/- 304ns
+22:00:39 ref=50505300 (PPS) sys=0.000000045 seconds fast of NTP time freq=7.682 ppm fast resid=+0.004 ppm fix=1 sats=08 | #* PPS 0 2 377 5 +1208ns[+1618ns] +/- 303ns
+22:00:46 ref=50505300 (PPS) sys=0.000000234 seconds fast of NTP time freq=7.717 ppm fast resid=+0.066 ppm fix=1 sats=08 | #* PPS 0 2 377 5 +207ns[ +514ns] +/- 533ns
+22:00:53 ref=50505300 (PPS) sys=0.000000204 seconds slow of NTP time freq=7.765 ppm fast resid=+0.001 ppm fix=1 sats=08 | #* PPS 0 2 377 2 -348ns[ -693ns] +/- 307ns
+22:01:00 ref=50505300 (PPS) sys=0.000000053 seconds slow of NTP time freq=7.769 ppm fast resid=+0.000 ppm fix=1 sats=07 | #* PPS 0 2 377 3 -69ns[ -69ns] +/- 774ns
+22:01:07 ref=50505300 (PPS) sys=0.000000109 seconds slow of NTP time freq=7.764 ppm fast resid=-0.001 ppm fix=1 sats=07 | #* PPS 0 2 377 5 -144ns[ -276ns] +/- 319ns
+22:01:14 ref=50505300 (PPS) sys=0.000000121 seconds slow of NTP time freq=7.761 ppm fast resid=-0.001 ppm fix=1 sats=07 | #* PPS 0 2 377 5 -313ns[ -460ns] +/- 317ns
+22:01:21 ref=50505300 (PPS) sys=0.000000134 seconds fast of NTP time freq=7.765 ppm fast resid=+0.001 ppm fix=1 sats=07 | #* PPS 0 2 377 4 +385ns[ +589ns] +/- 333ns
+22:01:28 ref=50505300 (PPS) sys=0.000000224 seconds fast of NTP time freq=7.775 ppm fast resid=+0.001 ppm fix=1 sats=07 | #* PPS 0 2 377 2 +593ns[ +825ns] +/- 333ns
+22:01:35 ref=50505300 (PPS) sys=0.000000001 seconds slow of NTP time freq=7.817 ppm fast resid=+0.045 ppm fix=1 sats=07 | #* PPS 0 2 377 5 +2ns[+1187ns] +/- 330ns
+22:01:42 ref=50505300 (PPS) sys=0.000000065 seconds slow of NTP time freq=7.853 ppm fast resid=-0.009 ppm fix=1 sats=08 | #* PPS 0 2 377 3 -541ns[ -962ns] +/- 327ns
+22:01:49 ref=50505300 (PPS) sys=0.000000222 seconds slow of NTP time freq=7.812 ppm fast resid=-0.018 ppm fix=1 sats=08 | #* PPS 0 2 377 3 +21ns[ -248ns] +/- 322ns
+22:01:56 ref=50505300 (PPS) sys=0.000000275 seconds fast of NTP time freq=7.797 ppm fast resid=+0.006 ppm fix=1 sats=08 | #* PPS 0 2 377 2 +321ns[ +649ns] +/- 322ns
+22:02:03 ref=50505300 (PPS) sys=0.000000000 seconds slow of NTP time freq=7.838 ppm fast resid=+0.003 ppm fix=1 sats=03 | #* PPS 0 2 377 4 +663ns[+1075ns] +/- 616ns
+22:02:10 ref=50505300 (PPS) sys=0.000000000 seconds slow of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #* PPS 0 2 376 8 +195ns[+1128ns] +/- 327ns
+22:02:19 ref=50505300 (PPS) sys=0.000000000 seconds slow of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #* PPS 0 2 370 17 +195ns[+1128ns] +/- 327ns
+22:02:28 ref=50505300 (PPS) sys=0.000000000 seconds slow of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #* PPS 0 2 300 26 +195ns[+1128ns] +/- 327ns
+22:02:37 ref=50505300 (PPS) sys=0.000000000 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 35 +195ns[+1128ns] +/- 327ns
+22:02:46 ref=50505300 (PPS) sys=0.000000000 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 44 +195ns[+1128ns] +/- 327ns
+22:02:55 ref=50505300 (PPS) sys=0.000000000 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 53 +195ns[+1128ns] +/- 327ns
+22:03:04 ref=50505300 (PPS) sys=0.000000000 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 62 +195ns[+1128ns] +/- 327ns
+22:03:13 ref=50505300 (PPS) sys=0.000000001 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 71 +195ns[+1128ns] +/- 327ns
+22:03:22 ref=50505300 (PPS) sys=0.000000001 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 80 +195ns[+1128ns] +/- 327ns
+22:03:31 ref=50505300 (PPS) sys=0.000000001 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 89 +195ns[+1128ns] +/- 327ns
+22:03:40 ref=50505300 (PPS) sys=0.000000001 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 98 +195ns[+1128ns] +/- 327ns
+22:03:49 ref=50505300 (PPS) sys=0.000000001 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 107 +195ns[+1128ns] +/- 327ns
+22:03:58 ref=50505300 (PPS) sys=0.000000001 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 116 +195ns[+1128ns] +/- 327ns
+22:04:07 ref=50505300 (PPS) sys=0.000000001 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 125 +195ns[+1128ns] +/- 327ns
+22:04:16 ref=50505300 (PPS) sys=0.000000001 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 134 +195ns[+1128ns] +/- 327ns
+22:04:30 ref=50505300 (PPS) sys=0.000000002 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 148 +195ns[+1128ns] +/- 327ns
+22:04:39 ref=50505300 (PPS) sys=0.000000002 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 157 +195ns[+1128ns] +/- 327ns
+22:04:48 ref=50505300 (PPS) sys=0.000000002 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 166 +195ns[+1128ns] +/- 327ns
+22:04:57 ref=50505300 (PPS) sys=0.000000002 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 175 +195ns[+1128ns] +/- 327ns
+22:05:06 ref=50505300 (PPS) sys=0.000000002 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 184 +195ns[+1128ns] +/- 327ns
+22:05:20 ref=50505300 (PPS) sys=0.000000002 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 198 +195ns[+1128ns] +/- 327ns
+22:05:29 ref=50505300 (PPS) sys=0.000000002 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 207 +195ns[+1128ns] +/- 327ns
+22:05:38 ref=50505300 (PPS) sys=0.000000002 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 216 +195ns[+1128ns] +/- 327ns
+22:05:47 ref=50505300 (PPS) sys=0.000000003 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 225 +195ns[+1128ns] +/- 327ns
+22:05:56 ref=50505300 (PPS) sys=0.000000003 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 234 +195ns[+1128ns] +/- 327ns
+22:06:05 ref=50505300 (PPS) sys=0.000000003 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 243 +195ns[+1128ns] +/- 327ns
+22:06:14 ref=50505300 (PPS) sys=0.000000003 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 252 +195ns[+1128ns] +/- 327ns
+22:06:23 ref=50505300 (PPS) sys=0.000000003 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 261 +195ns[+1128ns] +/- 327ns
+22:06:32 ref=50505300 (PPS) sys=0.000000003 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 270 +195ns[+1128ns] +/- 327ns
+22:06:41 ref=50505300 (PPS) sys=0.000000003 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 279 +195ns[+1128ns] +/- 327ns
+22:06:50 ref=50505300 (PPS) sys=0.000000003 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 288 +195ns[+1128ns] +/- 327ns
+22:06:59 ref=50505300 (PPS) sys=0.000000003 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 297 +195ns[+1128ns] +/- 327ns
+22:07:08 ref=50505300 (PPS) sys=0.000000004 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 306 +195ns[+1128ns] +/- 327ns
+22:07:17 ref=50505300 (PPS) sys=0.000000004 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 315 +195ns[+1128ns] +/- 327ns
+22:07:26 ref=50505300 (PPS) sys=0.000000004 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 324 +195ns[+1128ns] +/- 327ns
+22:07:35 ref=50505300 (PPS) sys=0.000000004 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 333 +195ns[+1128ns] +/- 327ns
+22:07:44 ref=50505300 (PPS) sys=0.000000004 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 342 +195ns[+1128ns] +/- 327ns
+22:07:53 ref=50505300 (PPS) sys=0.000000004 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 351 +195ns[+1128ns] +/- 327ns
+22:08:02 ref=50505300 (PPS) sys=0.000000004 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 360 +195ns[+1128ns] +/- 327ns
+22:08:11 ref=50505300 (PPS) sys=0.000000004 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 369 +195ns[+1128ns] +/- 327ns
+22:08:20 ref=50505300 (PPS) sys=0.000000004 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 378 +195ns[+1128ns] +/- 327ns
+22:08:29 ref=50505300 (PPS) sys=0.000000005 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 387 +195ns[+1128ns] +/- 327ns
+22:08:38 ref=50505300 (PPS) sys=0.000000005 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 396 +195ns[+1128ns] +/- 327ns
+22:08:52 ref=50505300 (PPS) sys=0.000000005 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 410 +195ns[+1128ns] +/- 327ns
+22:09:01 ref=50505300 (PPS) sys=0.000000005 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 419 +195ns[+1128ns] +/- 327ns
+22:09:10 ref=50505300 (PPS) sys=0.000000005 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 428 +195ns[+1128ns] +/- 327ns
+22:09:19 ref=50505300 (PPS) sys=0.000000005 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 437 +195ns[+1128ns] +/- 327ns
+22:09:28 ref=50505300 (PPS) sys=0.000000005 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 446 +195ns[+1128ns] +/- 327ns
+22:09:37 ref=50505300 (PPS) sys=0.000000005 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 455 +195ns[+1128ns] +/- 327ns
+22:09:46 ref=50505300 (PPS) sys=0.000000006 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 464 +195ns[+1128ns] +/- 327ns
+22:09:55 ref=50505300 (PPS) sys=0.000000006 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 473 +195ns[+1128ns] +/- 327ns
+22:10:04 ref=50505300 (PPS) sys=0.000000006 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 482 +195ns[+1128ns] +/- 327ns
+22:10:13 ref=50505300 (PPS) sys=0.000000006 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 491 +195ns[+1128ns] +/- 327ns
+22:10:22 ref=50505300 (PPS) sys=0.000000006 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 500 +195ns[+1128ns] +/- 327ns
+22:10:31 ref=50505300 (PPS) sys=0.000000006 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 509 +195ns[+1128ns] +/- 327ns
+22:10:40 ref=50505300 (PPS) sys=0.000000006 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 518 +195ns[+1128ns] +/- 327ns
+22:10:49 ref=50505300 (PPS) sys=0.000000006 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 527 +195ns[+1128ns] +/- 327ns
+22:10:58 ref=50505300 (PPS) sys=0.000000006 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 536 +195ns[+1128ns] +/- 327ns
+22:11:07 ref=50505300 (PPS) sys=0.000000007 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 545 +195ns[+1128ns] +/- 327ns
+22:11:16 ref=50505300 (PPS) sys=0.000000007 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 554 +195ns[+1128ns] +/- 327ns
+22:11:25 ref=50505300 (PPS) sys=0.000000007 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 563 +195ns[+1128ns] +/- 327ns
+22:11:34 ref=50505300 (PPS) sys=0.000000007 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 572 +195ns[+1128ns] +/- 327ns
+22:11:43 ref=50505300 (PPS) sys=0.000000007 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 581 +195ns[+1128ns] +/- 327ns
+22:11:52 ref=50505300 (PPS) sys=0.000000007 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 590 +195ns[+1128ns] +/- 327ns
+22:12:01 ref=50505300 (PPS) sys=0.000000007 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 599 +195ns[+1128ns] +/- 327ns
+22:12:10 ref=50505300 (PPS) sys=0.000000007 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 608 +195ns[+1128ns] +/- 327ns
+22:12:19 ref=50505300 (PPS) sys=0.000000008 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 617 +195ns[+1128ns] +/- 327ns
+22:12:28 ref=50505300 (PPS) sys=0.000000008 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 626 +195ns[+1128ns] +/- 327ns
+22:12:37 ref=50505300 (PPS) sys=0.000000008 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 635 +195ns[+1128ns] +/- 327ns
+22:12:46 ref=50505300 (PPS) sys=0.000000008 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 644 +195ns[+1128ns] +/- 327ns
+22:12:55 ref=50505300 (PPS) sys=0.000000008 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 653 +195ns[+1128ns] +/- 327ns
+22:13:04 ref=50505300 (PPS) sys=0.000000008 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 662 +195ns[+1128ns] +/- 327ns
+22:13:13 ref=50505300 (PPS) sys=0.000000008 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 671 +195ns[+1128ns] +/- 327ns
+22:13:22 ref=50505300 (PPS) sys=0.000000008 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 680 +195ns[+1128ns] +/- 327ns
+22:13:31 ref=50505300 (PPS) sys=0.000000008 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 689 +195ns[+1128ns] +/- 327ns
+22:13:40 ref=50505300 (PPS) sys=0.000000009 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 698 +195ns[+1128ns] +/- 327ns
+22:13:49 ref=50505300 (PPS) sys=0.000000009 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 707 +195ns[+1128ns] +/- 327ns
+22:13:58 ref=50505300 (PPS) sys=0.000000009 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 716 +195ns[+1128ns] +/- 327ns
+22:14:07 ref=50505300 (PPS) sys=0.000000009 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 725 +195ns[+1128ns] +/- 327ns
+22:14:16 ref=50505300 (PPS) sys=0.000000009 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 734 +195ns[+1128ns] +/- 327ns
+22:14:25 ref=50505300 (PPS) sys=0.000000009 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 743 +195ns[+1128ns] +/- 327ns
+22:14:34 ref=50505300 (PPS) sys=0.000000009 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 752 +195ns[+1128ns] +/- 327ns
+22:14:43 ref=50505300 (PPS) sys=0.000000009 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 761 +195ns[+1128ns] +/- 327ns
+22:14:52 ref=50505300 (PPS) sys=0.000000009 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 770 +195ns[+1128ns] +/- 327ns
+22:15:00 ref=50505300 (PPS) sys=0.000000010 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 778 +195ns[+1128ns] +/- 327ns
+22:15:09 ref=50505300 (PPS) sys=0.000000010 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 787 +195ns[+1128ns] +/- 327ns
+22:15:18 ref=50505300 (PPS) sys=0.000000010 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 796 +195ns[+1128ns] +/- 327ns
+22:15:27 ref=50505300 (PPS) sys=0.000000010 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 805 +195ns[+1128ns] +/- 327ns
+22:15:36 ref=50505300 (PPS) sys=0.000000010 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 814 +195ns[+1128ns] +/- 327ns
+22:15:45 ref=50505300 (PPS) sys=0.000000010 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 823 +195ns[+1128ns] +/- 327ns
+22:15:54 ref=50505300 (PPS) sys=0.000000010 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=? sats=? | #? PPS 0 2 0 832 +195ns[+1128ns] +/- 327ns
+22:16:03 ref=50505300 (PPS) sys=0.000000010 seconds fast of NTP time freq=7.872 ppm fast resid=+0.029 ppm fix=1 sats=05 | #? PPS 0 2 0 841 +195ns[+1128ns] +/- 327ns
+22:16:10 ref=50505300 (PPS) sys=0.000011494 seconds slow of NTP time freq=7.859 ppm fast resid=-0.000 ppm fix=1 sats=07 | #* PPS 0 2 1 3 -581ns[ -12us] +/- 604ns
+22:16:17 ref=50505300 (PPS) sys=0.000000007 seconds slow of NTP time freq=7.857 ppm fast resid=-0.000 ppm fix=1 sats=07 | #* PPS 0 2 7 1 -1876ns[-1895ns] +/- 756ns
+22:16:24 ref=50505300 (PPS) sys=0.000000000 seconds fast of NTP time freq=7.857 ppm fast resid=-0.001 ppm fix=1 sats=08 | #* PPS 0 2 17 6 -1058ns[-2124ns] +/- 342ns
+22:16:31 ref=50505300 (PPS) sys=0.000000001 seconds fast of NTP time freq=7.832 ppm fast resid=-0.258 ppm fix=1 sats=08 | #* PPS 0 2 77 5 +651ns[-3187ns] +/- 344ns
+22:16:38 ref=50505300 (PPS) sys=0.000000020 seconds fast of NTP time freq=7.605 ppm fast resid=-0.001 ppm fix=1 sats=08 | #* PPS 0 2 377 3 +175ns[ +259ns] +/- 342ns
+22:16:45 ref=50505300 (PPS) sys=0.000000070 seconds fast of NTP time freq=7.606 ppm fast resid=+0.000 ppm fix=1 sats=08 | #* PPS 0 2 377 1 +54ns[ +116ns] +/- 348ns
+22:16:52 ref=50505300 (PPS) sys=0.000000023 seconds fast of NTP time freq=7.606 ppm fast resid=-0.000 ppm fix=1 sats=08 | #* PPS 0 2 377 6 -22ns[ -36ns] +/- 350ns

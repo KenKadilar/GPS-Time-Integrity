@@ -63,14 +63,18 @@ each other.
 
 ## Parts
 
+Bought for this build:
+
 | part | CAD |
 |---|---:|
 | Whadda WPSH456 NEO-6M GPS shield, u-blox NEO-6M | 59.95 |
 | TP-Link TL-SG1005D gigabit switch | 29.95 |
 | two Cat6 patch cables | 5.90 |
-| total with tax | 108.25 |
+| with tax | 108.25 |
 
-Already owned and used here: a Raspberry Pi 5, two ESP32 DevKit V1 boards, a breadboard and jumpers.
+Already on hand from earlier projects: a Raspberry Pi 5 with its cooler, case, card and supply, two ESP32
+DevKit V1 boards, jumper wires and a breadboard. Those came to about CAD 250 when they were bought, so the
+whole rig is around CAD 360.
 
 ## Running it
 

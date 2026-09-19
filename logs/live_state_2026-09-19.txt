@@ -1,0 +1,135 @@
+LIVE STATE CAPTURE
+laptop date: 2026-09-19 01:39:40 EDT
+pi date:     2026-09-19 01:39:40 EDT
+
+===== LAPTOP, the PTP client end =====
+--- interfaces ---
+enp3s0           UP             10.0.0.57/24 2607:fea8:119e:5600::dd67/128 2607:fea8:119e:5600:9822:41a0:3036:7ecd/64 2607:fea8:119e:5600:b49c:fa0e:3f0:a570/64 fe80::f7c2:d11c:d6a1:1b2b/64 
+wlp0s20f3        DOWN           
+--- ethtool -T enp3s0, the answer to the Windows question ---
+Time stamping parameters for enp3s0:
+Capabilities:
+	software-transmit
+	software-receive
+	software-system-clock
+PTP Hardware Clock: none
+Hardware Transmit Timestamp Modes: none
+Hardware Receive Filter Modes: none
+--- link ---
+	Speed: 1000Mb/s
+	Duplex: Full
+	Link detected: yes
+--- driver ---
+driver: r8169
+version: 7.0.0-28-generic
+firmware-version: rtl8168h-2_0.0.2 02/26/15
+--- linuxptp ---
+4.0
+
+===== PI, the grandmaster and the clock =====
+--- uptime ---
+ 01:39:40 up 1 day,  9:42,  5 users,  load average: 0.12, 0.05, 0.01
+--- chronyc tracking ---
+Reference ID    : 50505300 (PPS)
+Stratum         : 1
+Ref time (UTC)  : Sat Sep 19 05:39:35 2026
+System time     : 0.000000079 seconds fast of NTP time
+Last offset     : +0.000000293 seconds
+RMS offset      : 0.000000275 seconds
+Frequency       : 7.637 ppm fast
+Residual freq   : +0.002 ppm
+Skew            : 0.042 ppm
+Root delay      : 0.000000001 seconds
+Root dispersion : 0.000006397 seconds
+Update interval : 4.0 seconds
+Leap status     : Normal
+--- chronyc sources ---
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+#? NMEA                          0   3   377    11    +12ms[  +12ms] +/-  100ms
+#* PPS                           0   2   377     4   +710ns[ +990ns] +/-  277ns
+^- ntp.netlinkify.com            2  10   377   138  -6197us[-6185us] +/- 9699us
+^- 2604:a880:cad:d0::5f4:80>     2  10   377   716  -6547us[-6389us] +/-   34ms
+^- ntp1.torix.ca                 1  10   377    54  -3167us[-3167us] +/- 5380us
+^- 2605:6f08:2000:6::7326:2>     3  10   377   570  -2905us[-2785us] +/- 6283us
+--- pps devices by name ---
+/sys/class/pps/pps0: pps@12.-1
+/sys/class/pps/pps1: ptp0
+--- ethtool -T eth0, hardware timestamping ---
+Time stamping parameters for eth0:
+Capabilities:
+	hardware-transmit
+	software-transmit
+	hardware-receive
+	software-receive
+	software-system-clock
+	hardware-raw-clock
+Hardware timestamp provider index: 0
+Hardware timestamp provider qualifier: Precise (IEEE 1588 quality)
+Hardware Transmit Timestamp Modes:
+	off
+	on
+	onestep-sync
+Hardware Receive Filter Modes:
+	none
+	all
+--- link ---
+	Speed: 1000Mb/s
+	Duplex: Full
+	Link detected: yes
+--- units ---
+active
+active
+active
+active
+active
+--- phc2sys servo, last lines ---
+Sep 19 01:39:39 raspberrypi phc2sys[244312]: [121371.599] eth0 sys offset        95 s2 freq  -52913 delay     55
+Sep 19 01:39:40 raspberrypi phc2sys[244312]: phc2sys[121372.599]: eth0 sys offset        37 s2 freq  -52943 delay     55
+Sep 19 01:39:40 raspberrypi phc2sys[244312]: [121372.599] eth0 sys offset        37 s2 freq  -52943 delay     55
+--- PHC against system clock, PHC holds TAI so expect 37 s ahead ---
+
+system   1789796381
+--- grandmaster announce, what it claims to be ---
+	88a29e.fffe.e821dc-0 seq 0 RESPONSE MANAGEMENT TIME_PROPERTIES_DATA_SET 
+		currentUtcOffset      37
+		leap61                0
+		leap59                0
+		currentUtcOffsetValid 0
+		ptpTimescale          1
+		timeTraceable         0
+		frequencyTraceable    0
+		timeSource            0x20
+--- gm.conf ---
+[global]
+serverOnly               1
+twoStepFlag              1
+priority1                127
+priority2                127
+clockClass               6
+clockAccuracy            0x21
+offsetScaledLogVariance  0x4e5d
+timeSource               0x20
+network_transport        UDPv4
+time_stamping            hardware
+logAnnounceInterval      1
+logSyncInterval          0
+logMinDelayReqInterval   0
+hwts_filter              full
+[eth0]
+--- verdict log tail ---
+{"detail":{"boardTemperatureC":46.85,"comparedAgainst":"PPS","frequencyPpm":7.984,"gpsMode":3,"ppsError":2.69e-07,"ppsLastRx":6,"ppsOffset":2.49e-07,"ppsReach":377,"pulseMissingWithFix":false,"residualPpm":-0.001,"satelliteVersusServersWorst":0.006389,"satellitesUsed":0,"serversCompared":4,"systemTimeOffset":-4.3e-08,"worstServerDisagreement":0.006389},"hash":"0a907e33b7e43afd93b85b6af2deea7226799600839e22bca82443f62613bea0","prevHash":"16475c73213e9df0390a35ea8c893b8ba7d8deb777bdbc1a07c779f8625fdbf9","reason":"heartbeat","seq":343,"sig":"b549cc7ebbead24c60c7574a17d149545b4fe34cff7fd85e5cbc1e097b4fe877478572b61d8d7be71e94efbb7c47b85131778032fcd1e7b372da19d55b38d40f","state":"LOCKED","time":"2026-09-19T05:30:58Z"}
+{"detail":{"boardTemperatureC":45.75,"comparedAgainst":"PPS","frequencyPpm":7.918,"gpsMode":3,"ppsError":2.69e-07,"ppsLastRx":3,"ppsOffset":6.78e-07,"ppsReach":377,"pulseMissingWithFix":false,"residualPpm":0.034,"satelliteVersusServersWorst":0.00639,"satellitesUsed":0,"serversCompared":4,"systemTimeOffset":-5.76e-07,"worstServerDisagreement":0.006389},"hash":"7d150d34845bbafc8f64acfff6ca14b9fddaf7cce2113135e240a2e8f3c2cd25","prevHash":"0a907e33b7e43afd93b85b6af2deea7226799600839e22bca82443f62613bea0","reason":"heartbeat","seq":344,"sig":"5b70a08a7f468c682c5f52e645ddd831e8d6ea2f92b246c183b1009e40a762a48458bea12a1b94c7aa3b15775bb0e54e6df23422f425c86fdfe150fc307e9e0f","state":"LOCKED","time":"2026-09-19T05:36:03Z"}
+--- verdict log size ---
+344 /home/pi/gps_timing/verdict_log.jsonl
+--- certs on the Pi ---
+total 20
+drwx------ 2 pi pi 4096 Sep 19 01:03 .
+drwxrwxr-x 5 pi pi 4096 Sep 19 01:06 ..
+-rw-r--r-- 1 pi pi 1220 Sep 19 01:03 261cd87432a766d5fc526a9ba7087ba6537d0efb663f25e14518bf8f88a9432b-certificate.pem.crt
+-rw------- 1 pi pi 1675 Sep 19 01:03 261cd87432a766d5fc526a9ba7087ba6537d0efb663f25e14518bf8f88a9432b-private.pem.key
+-rw-r--r-- 1 pi pi 1187 Sep 19 01:03 AmazonRootCA1.pem
+
+===== THE TWO ESP32 BOARDS =====
+board A 10.0.0.143 silent, expected: it runs the serial-only capture firmware
+board B 10.0.0.38 reachable

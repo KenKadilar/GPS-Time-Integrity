@@ -9,7 +9,7 @@ alarm when they disagree.
 
 ## Catching a faked receiver
 
-Normal. The GPS pulse and four internet servers all agree, within milliseconds.
+The GPS pulse and four internet servers, all agreeing within milliseconds.
 
 ```
 MS Name/IP address         Stratum Poll Reach LastRx Last sample
@@ -31,45 +31,49 @@ The receiver is then fed a time two minutes wrong. Same command, moments later.
 10 UNTRUSTED | compared against PPS | satellite vs servers 119.997858 s
 ```
 
-**The hardware pulse is dragged along with the lie.** It is accurate to 400 nanoseconds and it carries no date,
-so it takes its second number from the receiver's text. A perfect pulse then reports a perfect time that is two
-minutes wrong.
+The hardware pulse is accurate to 400 nanoseconds and carries no date, so it takes its second number from the
+receiver's text. Shifting that text moves the pulse's reported time with it. The internet servers are
+unaffected, which is what makes the disagreement visible.
 
-**The internet servers are what catch it**, because they have no idea the GPS is lying. One reference cannot
-catch its own spoof. Two independent ones can.
-
-Every verdict goes into a log where each entry carries the fingerprint of the one before it and a signature
+Each verdict goes into a log where every entry carries the fingerprint of the one before it and a signature
 made on the device, so an edited or forged entry fails the checker.
 
 ## Measured
 
 | | |
 |---|---|
-| clock held against the pulse, 23 hours | **71 ns** median |
-| drift after the antenna is pulled, 14 minutes | **12 microseconds** |
-| the same crystal with nothing correcting it | **679 ms a day** |
-| a two minute spoof | **caught** |
-| two microcontrollers stamping one shared event | **±1.2 microseconds** apart |
-| hardware timestamp against software interrupt | **52 ns** against 420 ns of jitter |
+| clock held against the pulse, 23 hours | 71 ns median |
+| drift after the antenna is pulled, 14 minutes | 12 microseconds |
+| the same crystal with nothing correcting it | 679 ms a day |
+| a two minute spoof | caught |
+| two microcontrollers stamping one shared event | within 1.2 microseconds |
+| hardware timestamp against software interrupt | 52 ns against 420 ns of jitter |
 
 ![23 hours locked](logs/soak_2026-09-18.png)
 
-## One thing worth knowing
+## A 37 second error
 
-A client on the network once ran **37 seconds wrong while every part reported healthy.**
+PTP runs on a timescale that counts every second that has ever passed. Ordinary computers use one that pauses
+for leap seconds. The two are 37 seconds apart.
 
-Network timing counts every second that has ever passed. Ordinary computers use a clock that pauses for leap
-seconds. The two are 37 seconds apart. The server was announcing the first and sending the second, so the
-client converted a number that never needed converting.
+The grandmaster here announced the first while sending the second, so a client converted a number that had not
+needed converting and set its clock 37 seconds behind. chrony was locked to GPS, the network card was holding
+127 nanoseconds, and every component reported healthy. No part of the stack compared the two claims against
+each other.
 
-Nothing was broken. The clock was locked, the network card was holding 127 nanoseconds, and every component was
-correct about its own job. No part of it was positioned to compare the two claims against each other, which is
-the same gap this project exists to close.
+## Parts
+
+| part | CAD |
+|---|---:|
+| Whadda WPSH456 NEO-6M GPS shield, u-blox NEO-6M | 59.95 |
+| TP-Link TL-SG1005D gigabit switch | 29.95 |
+| two Cat6 patch cables | 5.90 |
+| total with tax | 108.25 |
+
+Already owned and used here: a Raspberry Pi 5, two ESP32 DevKit V1 boards, a breadboard and jumpers.
 
 ## Running it
 
 - [SETUP.md](SETUP.md), wiring, the Pi configuration and what is easy to get wrong
 - [TEST_PROCEDURE.md](TEST_PROCEDURE.md), how each number above was measured
 - `pytest tests -v`, ten tests, no hardware needed
-
-Raspberry Pi 5, a Whadda WPSH456 NEO-6M GPS shield, two ESP32 boards and a gigabit switch. Under CAD 100.

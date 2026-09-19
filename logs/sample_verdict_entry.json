@@ -1,0 +1,27 @@
+{
+  "detail": {
+    "boardTemperatureC": 45.75,
+    "comparedAgainst": "PPS",
+    "frequencyPpm": 7.873,
+    "gpsMode": 3,
+    "ppsError": 3.05e-07,
+    "ppsLastRx": 4,
+    "ppsOffset": 5.41e-07,
+    "ppsReach": 377,
+    "pulseMissingWithFix": false,
+    "residualPpm": 0.001,
+    "satelliteVersusServersWorst": 0.006185,
+    "satellitesUsed": 0,
+    "serversCompared": 4,
+    "systemTimeOffset": 0.0,
+    "worstServerDisagreement": 0.006185
+  },
+  "hash": "8275f451337e2699fcba2b669ac0201c3153bfb8ccc0eb8a24beca487317b8af",
+  "prevHash": "757ded74e69d96ef3c32fc482e6c8ff9ecb66aee652edbc51337275bdadcd6b1",
+  "reason": "heartbeat",
+  "seq": 346,
+  "sig": "1c3079d84173526a872989423e0d6c1d303b02c2746acb91de084dff8e176922179b661d58d6a79e0ccc3881aa7aae90c1887f96312e2c4e3fa7a89356ced30c",
+  "state": "LOCKED",
+  "time": "2026-09-19T05:46:15Z",
+  "device": "gps-verdict-node"
+}

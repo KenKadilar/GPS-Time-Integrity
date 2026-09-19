@@ -71,7 +71,7 @@ Every offset chrony reports is measured against the system clock, so subtracting
 (GPS - clock) - (server - clock) = GPS - server
 ```
 
-The service compares the satellite source against each server and calls `UNTRUSTED` when the largest gap passes 50 ms, a threshold set at about five times the worst healthy disagreement measured here. Comparing each source against the system clock instead fails exactly when it matters, because a spoof that drags the clock along makes the honest servers look like the liars.
+The service compares the satellite source against each server and calls `UNTRUSTED` when the largest gap passes 50 ms, about four times the worst healthy disagreement measured over 23 hours. Comparing each source against the system clock instead fails exactly when it matters, because a spoof that drags the clock along makes the honest servers look like the liars.
 
 [`tools/spoof_shm_time.py`](tools/spoof_shm_time.py) writes a chosen offset into the gpsd shared memory unit that chrony reads, which is the interface a spoofed receiver's time arrives through. Nothing is transmitted over the air.
 
@@ -125,7 +125,7 @@ A real entry is in [`logs/sample_verdict_entry.json`](logs/sample_verdict_entry.
 
 ![23 hours locked](logs/soak_2026-09-18.png)
 
-Method for each figure is in [TEST_PROCEDURE.md](TEST_PROCEDURE.md), raw logs in [`logs/`](logs/).
+The 24 hour run's procedure and pass criteria are in [TEST_PROCEDURE.md](TEST_PROCEDURE.md), raw logs in [`logs/`](logs/).
 
 ## Hardware
 
@@ -166,7 +166,7 @@ tools/aws/              the IoT and IAM policy documents for the cloud path
 tests/                  the ten tests
 logs/                   every measured run, the soak chart, a sample log entry
 SETUP.md                wiring, Pi configuration, and what is easy to get wrong
-TEST_PROCEDURE.md       pass criteria and how each number was measured
+TEST_PROCEDURE.md       the 24 hour run: procedure, pass criteria, results
 ```
 
 ## Known limitations

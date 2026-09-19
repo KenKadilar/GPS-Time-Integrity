@@ -94,7 +94,7 @@ silkscreen on that board rather than by position.
 | `HOLDOVER` | no recent pulse, the clock running on the rate it learned |
 | `UNTRUSTED` | the pulse is alive and a server disagrees by more than 50 ms |
 
-The 50 ms threshold is about five times the worst disagreement measured here while healthy.
+The 50 ms threshold is about four times the worst healthy disagreement measured over 23 hours, 12.9 ms.
 
 ## How the comparison works
 

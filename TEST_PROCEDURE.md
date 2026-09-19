@@ -5,7 +5,7 @@ records how far the internet cross-check wanders when nothing is wrong.
 
 ## Setup
 
-- GPS shield wired as in the README, antenna at a window, a fix held before the start.
+- GPS shield wired as in SETUP.md, antenna at a window, a fix held before the start.
 - chrony selecting `PPS` (`#*` in `chronyc sources`), internet servers online as the cross-check.
 - `gps-verdict.service` running, logging every state change and a heartbeat every 5 minutes, each entry
   chained and signed.

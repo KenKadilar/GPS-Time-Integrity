@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 keys/
 *.pem
+secrets.h

@@ -1,6 +1,13 @@
-// stamps a shared event in this board's own time base, counted from the GPS pulse
+// stamps a shared event in this board's own time base, counted from the GPS pulse, and reports over serial and UDP
 
 #include <Arduino.h>
+#include <WiFi.h>
+#include <WiFiUdp.h>
+#include "secrets.h"
+
+const char* listenerAddress = "10.0.0.30";
+const uint16_t listenerPort = 5005;
+WiFiUDP udp;
 
 const int ppsPin = 4;
 const int eventPin = 18;
@@ -38,6 +45,15 @@ void IRAM_ATTR onEventEdge(){
     portEXIT_CRITICAL_ISR(&edgeMux);
 }
 
+void report(const char* text){
+    Serial.println(text);
+    if (WiFi.status() == WL_CONNECTED){
+        udp.beginPacket(listenerAddress, listenerPort);
+        udp.print(text);
+        udp.endPacket();
+    }
+}
+
 void setup(){
     Serial.begin(115200);
     delay(300);
@@ -45,10 +61,24 @@ void setup(){
     pinMode(eventPin, INPUT);
     attachInterrupt(digitalPinToInterrupt(ppsPin), onPpsEdge, RISING);
     attachInterrupt(digitalPinToInterrupt(eventPin), onEventEdge, RISING);
+
+    WiFi.mode(WIFI_STA);
+    WiFi.setSleep(false);
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+    uint32_t started = millis();
+    while (millis() - started < 15000){
+        if (WiFi.status() == WL_CONNECTED){break;}
+        delay(250);
+    }
+
+    const char* wifiState = "down";
+    if (WiFi.status() == WL_CONNECTED){wifiState = "up";}
+
+    char line[120];
     Serial.println();
-    Serial.printf("board %s ready, pulse on GPIO %d, event on GPIO %d\n", BOARD_ID, ppsPin, eventPin);
-    Serial.println("PULSE board pulse interval_us error_us");
-    Serial.println("EVENT board pulse offset_us");
+    snprintf(line, sizeof(line), "board %s ready, pulse on GPIO %d, event on GPIO %d, wifi %s %s",
+             BOARD_ID, ppsPin, eventPin, wifiState, WiFi.localIP().toString().c_str());
+    report(line);
 }
 
 void loop(){
@@ -68,16 +98,20 @@ void loop(){
     stampPulse = eventPulse;
     portEXIT_CRITICAL(&edgeMux);
 
+    char line[80];
+
     if (events > reportedEvent){
         reportedEvent = events;
-        Serial.printf("EVENT %s %lu %lu\n", BOARD_ID, stampPulse, stampMicros);
+        snprintf(line, sizeof(line), "EVENT %s %lu %lu", BOARD_ID, stampPulse, stampMicros);
+        report(line);
     }
 
     if (pulses > reportedPulse){
         reportedPulse = pulses;
         if (pulses > 1){
             int32_t errorMicros = (int32_t)(interval - nominalInterval);
-            Serial.printf("PULSE %s %lu %lu %+ld\n", BOARD_ID, pulses, interval, errorMicros);
+            snprintf(line, sizeof(line), "PULSE %s %lu %lu %+ld", BOARD_ID, pulses, interval, errorMicros);
+            report(line);
         }
     }
 

@@ -35,6 +35,11 @@ All figures measured on 2026-09-17, logs in `logs/`.
 | hot restart after 14 blind minutes | fix in 9 seconds, pulse in 16 |
 | internet servers against the pulse, healthy | 1.8 ms to 12.6 ms |
 | a 120 second spoof | detected, `satelliteVersusServersWorst 119.997858` |
+| 24 hour soak | `LOCKED` for 23 hours straight, clock offset median 71 ns and worst 744 ns |
+| worst healthy cross-check gap in 24 hours | 12.9 ms, about a quarter of the 50 ms threshold |
+| crystal rate against board temperature | -0.087 ppm per degree, most of the movement inside each hour |
+
+The soak procedure, its pass criteria and the chart are in `TEST_PROCEDURE.md`.
 
 ## How the spoof detection works
 
